@@ -1,0 +1,120 @@
+/*
+Theme Name:Minima
+Theme URI:http://contraculto.com/minima
+Description:Base WordPress theme.
+Version:2
+Author:Rodrigo Lanas
+Author URI:http://contraculto.com/
+
+Minima is distributed under a GNU GPL v3 license.
+http://www.gnu.org/copyleft/gpl.html
+
+01: Normalize.
+02: Typography and WordPress.
+03: Structure.
+04: Header.
+05: Navigation.
+06: Main Content.
+	06.01: Comments.
+07: Sidebar.
+08: Footer.
+*/
+
+/* * * * * * * * * * * * * * * * * * * * 01: Normalize.css (v2.1.3 - MIT License - git.io/normalize) */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}
+img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+/* * * * * * * * * * * * * * * * * * * * 02: Typography and WordPress. */
+
+body{line-height:20px;font-size:12px;background:#fff;color:#333}
+.sans{font-family:Helvetica,'Helvetica Neue','Bitstream Vera Sans',Arial,sans-serif}
+.serif{font-family:Georgia,'Linux Libertine',Palatino,'Palatino Linotype','Book Antiqua','Times New Roman',serif}
+.mono{font-family:'Courier New',Courier,Monaco,'Lucida Console','Nimbus Mono L',FreeMono}
+h1,h2,h3,h4,h5,h6{font-weight:bold}
+h1{line-height:30px;font-size:24px}
+h2{line-height:30px;font-size:22px}
+h3{line-height:30px;font-size:18px}
+h4{font-size:16px}
+h5{font-size:14px}
+h6{font-size:12px}
+p{font-size:12px}
+blockquote{margin-bottom:20px;font-style:italic}
+ol li{margin-bottom:20px;list-style-type:decimal}
+ul li{margin-bottom:20px;list-style-type:disc}
+strong{font-weight:bold}
+em{font-style:italic}
+small{font-size:10px}
+
+a{color:#f4336e;text-decoration:none}
+a:hover{color:#f4336e;text-decoration:underline}
+
+.clear{clear:both}
+.aligncenter{display:block; margin:0 auto}
+.alignleft{float:left}
+.alignright{float:right}
+.wp-caption{margin:10px;border:1px solid #b6b6b6;background:#f3f3f3;padding-top:4px}
+.wp-caption img{}
+.wp-caption p.wp-caption-text{padding:0 4px 5px;line-height:17px;font-size:11px}
+
+/* * * * * * * * * * * * * * * * * * * *  03: Structure. */
+
+body{margin:20px;background:#fff;text-align:center;color:#333}
+#wrapper{margin:0 auto;width:980px;text-align:left}
+
+/* * * * * * * * * * * * * * * * * * * * 04: Header. */
+
+#header{margin-bottom:20px;background:lime}
+#header h1{margin-bottom:5px;font-size:25px}
+#header h2{font-size:14px}
+
+/* * * * * * * * * * * * * * * * * * * * 05: Navigation. */
+
+#navigation{text-align:right;font-size:12px}
+#navigation ul{margin:10px}
+#navigation li{display:inline;margin-left:20px;font-weight:bold}
+
+/* * * * * * * * * * * * * * * * * * * * 06: Content. */
+
+#content{margin-bottom:20px;float:left;width:70%}
+.content_single{margin-bottom:60px}
+.content_single_title{}
+.content_single_title h2{margin-bottom:5px;line-height:30px;font-size:30px;font-weight:bold}
+.content_single_title_meta{padding-bottom:5px;line-height:11px;font-size:11px;font-weight:bold}
+.content_single_body{padding-top:10px;text-align:left;line-height:25px;font-size:15px}
+.content_single_body p{margin-bottom:15px}
+.content_single_body ul, .content_single_body ol{margin-left:30px;margin-bottom:10px}
+.content_single_body ul li{margin-bottom:5px;list-style-type:disc}
+.content_single_body ol li{margin-bottom:5px;list-style-type:decimal}
+.content_single blockquote{margin-left:30px;border-left:2px solid #d97b00;padding-left:6px;font-size:14px;font-style:italic}
+#content_navigation{margin-top:10px}
+#content_navigation_older{float:left;margin-bottom:10px}
+#content_navigation_newer{float:right;margin-bottom:10px}
+
+/* * * * * * * * * * 06.01: Comments. */
+
+#comments{padding-bottom:20px}
+#comments_title{line-height:18px;font-size:16px;font-weight:bold}
+#comments_block{}
+.comments_single{margin:20px 0;border:1px solid #b6b6b6;padding:10px}
+.comments_single_meta{margin-bottom:10px;font-size:12px}
+.comments_single_content{margin-top:4px;line-height:16px;font-size:14px}
+#comments_callforcomments{margin-bottom:10px;font-size:14px;font-weight:bold}
+#comments_registereduser{margin-bottom:10px;font-size:12px}
+#comments label{display:inline-block;margin-right:10px;width:250px;text-align:right;font-size:12px}
+#comments input{margin-bottom:10px;width:300px;border:1px solid #b7b7b7}
+#comments textarea{margin:0 0 10px 260px;width:300px;height:200px;border:1px solid #b7b7b7}
+#comments input#submit{margin-left:412px;width:150px}
+
+/* * * * * * * * * * * * * * * * * * * * 07: Sidebar. */
+
+#sidebar{float:right;width:28%}
+.sidebar_single{margin-bottom:20px;background:#f3f3f3;padding:10px;line-height:18px;font-size:14px}
+.sidebar_single h2{margin-bottom:5px;font-size:17px}
+
+/* * * * * * * * * * * * * * * * * * * * 08: Footer */
+
+#footer{clear:both;background:#f3f3f3;padding:10px;text-align:right;line-height:15px;font-size:12px}
+
