@@ -21,7 +21,7 @@
 	<div id="navigation">
 		<ul>
 			<li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
-			<?php wp_list_pages('title_li='); ?>
+			<?php wp_list_pages('title_li=&depth=1'); ?>
 			<li><a href="<?php bloginfo('rss2_url'); ?>">Feed RSS</a></li>
 		</ul>
 	</div>
