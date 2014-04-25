@@ -1,6 +1,6 @@
 Minima
 ======
 
-Wordpress base theme. To be used as a simple starting point for WordPress powered projects.
+Basic WordPress theme.
 
-Needs a lot of work.
+Tema básico para WordPress.

@@ -1,10 +1,10 @@
 /*
-Theme Name:Minima
-Theme URI:http://contraculto.com/minima
-Description:Base WordPress theme.
-Version:2
-Author:Rodrigo Lanas
-Author URI:http://contraculto.com/
+Theme Name: Minima
+Theme URI: http://contraculto.com/minima
+Description: Tema básico para WordPress.
+Version: 2.2
+Author: Rodrigo Lanas
+Author URI: http://contraculto.com/
 
 Minima is distributed under a GNU GPL v3 license.
 http://www.gnu.org/copyleft/gpl.html
@@ -25,17 +25,17 @@ http://www.gnu.org/copyleft/gpl.html
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}
 abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}
-img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}
+img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}
 input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
 
 /* * * * * * * * * * * * * * * * * * * * 02: Typography and WordPress. */
 
-body{line-height:15px;font-size:12px;background:#fff;color:#333}
+body{line-height:15px;font-size:12px;background:#e6e6e6;color:#333}
 .sans{font-family:Helvetica,'Helvetica Neue','Bitstream Vera Sans',Arial,sans-serif}
 .serif{font-family:Georgia,'Linux Libertine',Palatino,'Palatino Linotype','Book Antiqua','Times New Roman',serif}
 .mono{font-family:'Courier New',Courier,Monaco,'Lucida Console','Nimbus Mono L',FreeMono}
 h1,h2,h3,h4,h5,h6{font-weight:bold}
-h1{line-height:30px;font-size:24px}
+h1{line-height:30px;font-size:30px}
 h2{line-height:30px;font-size:22px}
 h3{line-height:30px;font-size:18px}
 h4{font-size:16px}
@@ -43,15 +43,14 @@ h5{font-size:14px}
 h6{font-size:12px}
 p{font-size:12px}
 blockquote{margin-bottom:20px;font-style:italic}
-ol,ul{padding:0}
 ol li{margin-bottom:20px;list-style-type:decimal}
 ul li{margin-bottom:20px;list-style-type:disc}
 strong{font-weight:bold}
 em{font-style:italic}
 small{font-size:10px}
 
-a{color:#f4336e;text-decoration:none}
-a:hover{color:#f4336e;text-decoration:underline}
+a{color:#cf1515;text-decoration:none}
+a:hover{color:#15bbcf}
 
 .clear{clear:both}
 .aligncenter{display:block; margin:0 auto}
@@ -63,64 +62,69 @@ a:hover{color:#f4336e;text-decoration:underline}
 
 /* * * * * * * * * * * * * * * * * * * *  03: Structure. */
 
-body{margin:30px}
+body{margin:20px}
 #wrapper{margin:0 auto;width:980px;text-align:left}
 
 /* * * * * * * * * * * * * * * * * * * * 04: Header. */
 
-#header{margin-bottom:30px}
-#header h1{}
-#header h2{}
+#header{margin-bottom:20px;background:#fff;padding:20px}
+#header h1{margin:0 0 10px 0}
+#header h3{margin:0 0 20px 0;font-weight:normal;font-style:italic;}
 
 /* * * * * * * * * * * * * * * * * * * * 05: Navigation. */
 
-#navigation{margin-bottom:30px}
-#navigation ul{}
+#navigation{text-align:right}
+#navigation ul{margin:0;padding:0}
 #navigation li{display:inline;margin-right:20px;font-weight:bold}
 
 /* * * * * * * * * * * * * * * * * * * * 06: Main. */
 
-#main{overflow:hidden;margin-bottom:30px;}
+#main{overflow:hidden;}
 
 /* * * * * * * * * * * * * * * * * * * * 07: Content. */
 
-#content{float:left;width:70%}
-.single{margin-bottom:60px}
-.single_title{}
-.single_title h2{}
-.single_title_meta{font-weight:bold}
+#content{float:left;width:680px}
+
+.single{margin-bottom:20px;padding:20px;background:#fff}
+
+.single_title{margin-bottom:20px}
+.single_title h2{margin-top:0}
+.single_title p{margin:0;line-height:18px;font-size:13px;font-style:italic}
+
 .single_body{text-align:left}
 .single_body p{margin-bottom:15px}
 .single_body ul, .single_body ol{margin-left:30px;margin-bottom:15px}
 .single_body ul li{margin-bottom:15px;list-style-type:disc}
 .single_body ol li{margin-bottom:15px;list-style-type:decimal}
 .single blockquote{margin-left:30px;border-left:2px solid #d97b00;padding-left:6px;font-size:14px;font-style:italic}
+
 #content_nav{margin-top:15px}
 #content_nav_next{float:left;margin-bottom:15px}
 #content_nav_prev{float:right;margin-bottom:15px}
 
 /* * * * * * * * * * 07.01: Comments. */
 
-#comments{padding-bottom:30px}
-#comments_title{line-height:18px;font-size:16px;font-weight:bold}
+#comments{}
+#comments > h5{margin:20px 0;padding:20px;background:#fff}
 #comments_block{}
-.comments_single{margin:30px 0;border:1px solid #b6b6b6;padding:10px}
+.comments_single{margin:20px 0;padding:20px;background:#fff}
 .comments_single_meta{margin-bottom:10px;font-size:12px}
 .comments_single_content{margin-top:4px;line-height:16px;font-size:14px}
-#comments_callforcomments{margin-bottom:10px;font-size:14px;font-weight:bold}
-#comments_registereduser{margin-bottom:10px;font-size:12px}
-#comments label{display:inline-block;margin-right:10px;width:250px;text-align:right;font-size:12px}
-#comments input{margin-bottom:10px;width:300px;border:1px solid #b7b7b7}
-#comments textarea{margin:0 0 10px 260px;width:300px;height:200px;border:1px solid #b7b7b7}
-#comments input#submit{margin-left:412px;width:150px}
+#comments_form{padding:20px;background:#fff}
+#comments fieldset{margin:0;border:0;padding:0}
+#comments label{display:inline-block;margin-bottom:5px;width:640px}
+#comments input{margin-bottom:10px;padding:5px;width:625px}
+#comments textarea{padding:5px;width:625px}
+#comments input#submit{margin-bottom:0;width:200px}
 
 /* * * * * * * * * * * * * * * * * * * * 08: Sidebar. */
 
-#sidebar{float:right;width:28%}
-.sidebar_single{margin-bottom:30px}
-.sidebar_single h2{}
+#sidebar{float:right;width:280px}
+.sidebar_single{margin-bottom:20px;padding:20px;background:#fff}
+.sidebar_single h3{margin-top:0;font-size:16px}
 
 /* * * * * * * * * * * * * * * * * * * * 09: Footer */
 
-#footer{}
+#footer{padding:20px;background:#fff}
+#footer p{margin:0}
 
